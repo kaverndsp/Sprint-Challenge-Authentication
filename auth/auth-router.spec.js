@@ -17,7 +17,7 @@ describe("auth-router.js", () => {
                 expect(res.status).toBe(500);
             });
      
-    it('responds with 201', async () => {
+        it('responds with 201 if user is successfully created', async () => {
             const user = {
                 username: 'Daniel2',
                 password: 'password2'
@@ -31,7 +31,7 @@ describe("auth-router.js", () => {
     });
 
     describe("LOGIN", () => {
-        it('responds with 200', async () => {
+        it('responds with 200 if user successfully logs in', async () => {
             const user = {
                 username: 'Daniel',
                 password: 'password'
